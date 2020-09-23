@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            font-family: D2Coding, monospace;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        console.log("----문제1------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+                
+            }
+            console.log(txt);
+        }
+        for (var i = 5; i > 0; i--) {
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+            }
+            console.log(txt);
+        }
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += "#";
+            }
+
+            for (var k = 0; k < 5-i; k++) {
+                txt += "*";
+            }
+
+            console.log(txt);
+        }
+
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <  5-i; j++) {
+                txt += "#";
+            }
+
+            for (var k = 0; k <= i; k++) {
+                txt += "*";
+            }
+
+            console.log(txt);
+        }
+
+        for (var i = 0; i < 5; i++) {
+            var num = "";
+        
+            for (var j = 0; j <  5; j++) {
+                num += j;
+            }
+
+            console.log(num);
+        }
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

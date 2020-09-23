@@ -15,32 +15,42 @@
     <img src="" alt="" id="com">
 
     <p id="result"></p>
+    
     <script>
-        function rpsGame(user) {
 
-            console.log(user);
+        function rpsGame(user)  {
+
+console.log(user);
 
             var computer = Math.floor(Math.random()*3) + 1;
             var fileName = "rps" + computer + ".png";
-            // 1:가위, 2:보, 3:바위
+            // 1:가위, 2:보, 3:바위 
 
             document.getElementById("com").src = fileName;
 
-            var result;
+var result;
 
-            if (computer == user) {
-                result = "비겼습니다.";
-            } else if (computer == 1 && user == 3) {
-                result = "이겼습니다.";
-            } else if (computer == 2 && user == 1) {
-                result = "이겼습니다.";
-            } else if (computer == 3 && user == 2) {
-                result = "이겼습니다.";
-            } else {
-                result = "졌습니다.";
-            }
+if (computer == user) {
+
+result = "비겼습니다.";
+
+} else if (computer == 1 && user == 3)  {
+result = "이겼습니다.";
+} else if (computer == 2 && user == 1) {
+ result = "이겼습니다.";
+} else if (computer == 3 && user == 2) {
+  result = "이겼습니다.";
+} else {
+
+result = "졌습니다.";
+}
+
             document.getElementById("result").innerHTML = result;
+        
         }
+
+
+
     </script>
 </body>
-</html> 
+</html>
