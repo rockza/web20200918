@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+
+    <h1 class='note' id="head1">Lorem.</h1>
+    <h1 class='note error' id="head2">Nulla?</h1>
+    <h1 class='note error' id="head3">Veniam?</h1>
+    <h1 id="head4">Dignissimos.</h1>
+    <h1 id="head5">Dolorum?</h1>
+    <script>
+var heads = document.querySelectorAll("h1");
+console.log(heads.length);
+
+
+var notes = document.querySelectorAll(".note");
+console.log(notes.length);
+
+
+var ne = document.querySelectorAll(".note.error");
+console.log(ne.length);
+
+for (var i = 0; i < ne.length; i++)  {
+ne[i].innerHTML = "Hello"
+
+}
+
+    </script>
+</body>
+</html>
